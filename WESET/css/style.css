@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    width: 100%;
+    background: rgb(1,1,1);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+.brand{
+    color: white;
+    font-size: 100%;
+    font-family: arial;
+    padding: 5px;
+    letter-spacing: 2px;
+    position: absolute;
+    visibility: hidden;
+}
+
+.left-nav{ 
+    width: 50%;
+    display: flex;
+    align-items: center;
+} 
+.logo{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.left-nav li{
+    margin: 2% 5%; 
+    list-style: none;
+}
+.left-nav li a{
+    text-decoration: none;
+    color: white;
+} 
+.left-nav li a:hover{
+    color: grey;
+}
+.right-nav{
+   width: 50%;
+   display: flex;
+   align-items: center;
+}
+.search{
+    border-radius: 50px;
+    width: 50%; 
+    padding: 10px;
+    margin: 2px 0%;
+}
+.btn{
+    padding: 5px;
+    color: white;
+    border: 2px solid white;
+    align-items: center;
+    border-radius: 20px;
+    background: none;
+    cursor: pointer;
+}
+
+.right-nav li{
+    display: flex;
+    margin: 2% 5%;
+    list-style: none;
+}
+.right-nav li a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+} 
+.right-nav li a:hover{
+    color: grey;
+}
+.right-list a{
+    margin-left: 15vw;
+}
+
+.background{
+    background: rgba(0,0,0,0) url("../images/earth.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.first-section{
+    height: 100vh;    
+}
+.para{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.head{
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.box-main{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: auto;
+}
+.section-left{
+    flex-direction: row-reverse;
+}
+.head1{
+    font-weight:500;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.para1{
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.para0{
+    margin:50px;  
+}
+.contact{
+    padding: 30px;
+    height: 30vh;
+}
+.contact h4{
+    font-size: 19px;
+}
+.contact div h5{
+    font-size: 17px;
+    display: inline;
+}
+.contact p{
+    display: inline;
+}
+footer{
+    text-align: center;
+    padding: 30px 0px;
+}
+.footer-background{
+    background: rgba(1,1,1,0.9);
+    color: white;    
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    right: 4%;
+    top: 12px;
+    cursor: pointer;
+}
+
+.line{
+    width: 30px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
+}
+
+
+
+@media only screen and (max-width:1010px){
+    .left-nav{
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar{
+        height: 100%;
+        flex-direction: column;
+        transition: all 0.3s ease-out;
+    }
+    .brand{
+        visibility:visible;
+        left: 10px;
+        top:20px;
+    }
+    .left-nav li a{
+        margin: 50px;
+    }
+    .right-nav{
+        flex-direction:column-reverse;
+        text-align: center;
+        width: 100%;
+    }
+    .right-list-first a{
+        margin: 0px;   
+    }
+    .right-list a{
+        margin-left: 0vw;
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+    .burger{
+        display: block;
+        margin-top: 10px;
+    }
+    .para{
+        width: 100%;
+        text-align: center;
+    }
+    .para0{
+        margin: 0px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .h-nav{
+        height: 72px;
+    }
+    .v-class{
+        opacity: 0;
+    }
+}
